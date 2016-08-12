@@ -19,7 +19,10 @@ Apriori定律2)：如果一个集合不是频繁项集，则它的所有超集�
 
 #F-P Growth: Frequent Pattern Tree
 http://www.360doc.com/content/09/1112/18/96202_8895093.shtml
-http://blog.sina.com.cn/s/blog_68ffc7a40100uebg.html
-该算法只进行2次数据库扫描且它不使用侯选集，直接压缩数据库成一个频繁模式树，最后通过这棵树生成关联规则。研究表明它比Apriori算法大约快一个数量级。
+http://blog.sina.com.cn/s/blog_68ffc7a40100uebg.html  
+
+该算法只进行2次数据库扫描且它不使用侯选集，直接压缩数据库成一个频繁模式树，最后通过这棵树生成关联规则。研究表明它比Apriori算法大约快一个数量级。  
+
 FP-growth算法是一种不产生候选模式而采用频繁模式增长的方法挖掘频繁模式的算法。算法只需要扫描2次数据库：第一次扫描数据库，得到1维频繁项集；第二次扫描数据库，利用1维频繁项集过滤数据库中的非频繁项，同时生成FP树。由于FP树蕴涵了所有的频繁项集，其后的频繁项集的挖掘只需要在FP树上进行。  
+
 代码实现：https://github.com/enaeseth/python-fp-growth
