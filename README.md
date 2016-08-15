@@ -29,6 +29,9 @@ FP-growth算法是一种不产生候选模式而采用频繁模式增长的方�
 
 # Naive Bayes
 http://www.cnblogs.com/leoo2sk/archive/2010/09/17/naive-bayesian-classifier.html 
-http://www.letiantian.me/2014-10-12-three-models-of-naive-nayes/
+http://www.letiantian.me/2014-10-12-three-models-of-naive-nayes/  
+
 通过条件概率P(A|B)得到条件概率P(B|A): P(B|A)=[P(A|B)P(B)]/P(A)  
-朴素贝叶斯的思想基础是这样的：对于给出的待分类项，求解在此项出现的条件下各个类别出现的概率，哪个最大，就认为此待分类项属于哪个类别。
+朴素贝叶斯的思想基础是这样的：对于给出的待分类项，求解在此项出现的条件下各个类别出现的概率，哪个最大，就认为此待分类项属于哪个类别。  
+特征是连续值时，一般假设特征值服从高斯分布。  
+当特征值没有在训练集中出现时，则需使用laplace平滑
