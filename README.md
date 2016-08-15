@@ -26,3 +26,9 @@ http://blog.sina.com.cn/s/blog_68ffc7a40100uebg.html
 FP-growth算法是一种不产生候选模式而采用频繁模式增长的方法挖掘频繁模式的算法。算法只需要扫描2次数据库：第一次扫描数据库，得到1维频繁项集；第二次扫描数据库，利用1维频繁项集过滤数据库中的非频繁项，同时生成FP树。由于FP树蕴涵了所有的频繁项集，其后的频繁项集的挖掘只需要在FP树上进行。  
 
 代码实现：https://github.com/enaeseth/python-fp-growth
+
+# Naive Bayes
+http://www.cnblogs.com/leoo2sk/archive/2010/09/17/naive-bayesian-classifier.html 
+http://www.letiantian.me/2014-10-12-three-models-of-naive-nayes/
+通过条件概率P(A|B)得到条件概率P(B|A): P(B|A)=[P(A|B)P(B)]/P(A)  
+朴素贝叶斯的思想基础是这样的：对于给出的待分类项，求解在此项出现的条件下各个类别出现的概率，哪个最大，就认为此待分类项属于哪个类别。
