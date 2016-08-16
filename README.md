@@ -65,3 +65,13 @@ L2范数不但可以防止过拟合，还可以让我们的优化求解变得稳
 #k-fold validation
 http://blog.csdn.net/holybin/article/details/27185659  
 将原始数据分成K组（一般是均分），将每个子集数据分别做一次验证集，其余的K-1组子集数据作为训练集，这样会得到K个模型，用这K个模型最终的验证集的分类准确率的平均数作为此K-CV下分类器的性能指标。K一般大于等于2，实际操作时一般从3开始取，只有在原始数据集合数据量小的时候才会尝试取2。K-CV可以有效的避免过学习以及欠学习状态的发生，最后得到的结果也比较具有说服性。
+
+#Generative model生成模型 vs. Discriminative model判别模型
+http://dataunion.org/8743.html  
+
+观察值：o, 模型：q  
+p(o|q): Generative model生成模型，估计的是联合概率分布（joint probability distribution），p(class, context)=p(class|context)*p(context)  
+包括：Gaussians, Naive Bayes,HMM(隐马尔科夫),Markov random fields, Restricted Boltzmann Machine, LDA(Latent Dirichlet Allocation)
+
+p(q|o):Discriminative model, 又可以称为条件模型，或条件概率模型。估计的是条件概率分布(conditional distribution)， p(class|context)  
+包括：Logistic regression, SVM, Boosting, traditional neural networks, Conditional random fields(CRF)
